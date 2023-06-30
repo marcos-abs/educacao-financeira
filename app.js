@@ -14,6 +14,10 @@ app.get("/", function(req, res) {
     res.render("home", {});
 });
 
+app.get("/videomaterial", function(req, res) {
+    res.render("videomaterial", {});
+})
+
 
 
 app.listen(3000, function() {

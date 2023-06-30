@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Handlee', sans-serif;
 }
 
 /*
@@ -20,6 +24,13 @@ a:hover {
     border-radius: 8px;
 }
 */
+
+p {
+    font-size: 1.4rem;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 3.0em;
+}
 
 .hover-underline-animation {
     display: inline-block;
@@ -45,7 +56,7 @@ a:hover {
     height: 4px;
     bottom: 0;
     left: 0;
-    background-color: orange;
+    background-color: #72493B;
     transform-origin: bottom center;
     transition: transform 0.25s ease-out;
 }
@@ -59,7 +70,7 @@ a:hover {
     width: 80%;
     margin: 0 auto;
     text-align: center;
-    background-color: black;
+    background-color: #61BFB7;
     border-radius: 15px;
 }
 
@@ -73,43 +84,57 @@ a:hover {
 }
 
 .primeiro-titulo {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 3.5rem;
+    font-family: 'Handlee', sans-serif;
+    font-size: 2.5rem;
     font-weight: bold;
-    color: orange;
+    color: #61BFB7;
     text-shadow: 4px 4px 0px #000;
 }
 
 .legenda {
-    font-size: 2.0rem;
+    font-size: 1.5rem;
     margin: 15px 0 0 0;
+}
+
+.titulo-svg {
+    color: #72493B;
+    font-weight: bold;
 }
 
 .body-squares {
     display: flex;
-    align-items: center;
+    flex: 1;
     justify-content: center;
-    margin: 15px auto;
+    align-items: center;
+}
+
+.body-squares a {
+    font-weight: normal;
+    text-decoration: none;
+    width: 20%;
+    height: 30%;
+    margin: 0 auto;
 }
 
 .insider {
-    background-image: linear-gradient(rgba(128, 128, 128, 0.75),rgba(128, 128, 128, 0.75)), url(/images/money.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 20%;
-    height: 30%;
+    position: relative;
     margin: 0 1%;
+}
+
+.insider img {
+    max-width: 100%;
+    border-radius: 25px;
 }
 
 .squares-titles {
     text-align: center;
     color: white;
-    font-size: 2.5rem;
+    font-size: 2.0rem;
+    position: absolute;
 }
 
-.squares-content {
-    color: white;
-    font-size: 1.3rem;
+.preto {
+    color: #000;
 }
 
 .middle-page {
@@ -124,6 +149,7 @@ a:hover {
 
 .img-container {
     display: flex;
+    flex: 1;
     margin: 0;
     padding: 0;  
 }
@@ -136,8 +162,9 @@ a:hover {
 .text {
     display: flex;
     flex-direction: column;
+    flex: 1;
     font-size: 1.0rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Handlee', sans-serif;
     margin: 0 80px 0 0;
     padding: 0;
 }
@@ -145,6 +172,7 @@ a:hover {
 .money-bag {
     width: 10%;
     margin-right: 10px;
+    filter: invert(30%) sepia(15%) saturate(1364%) hue-rotate(329deg) brightness(95%) contrast(88%);
 }
 
 .educacao-financeira {
@@ -166,6 +194,7 @@ a:hover {
 .seniors {
     width: 8%;
     margin-left: 10px;
+    filter: invert(30%) sepia(15%) saturate(1364%) hue-rotate(329deg) brightness(95%) contrast(88%);
 }
 
 .corpo-board {
@@ -217,3 +246,32 @@ a:hover {
     align-items: center;
     margin: 50px 0 10px 0;
 }
+
+/*
+    Paleta de cores Elke:
+    #61BFB7 azul mais saturado
+    #B7D6DA azul menos saturado
+    #72493B marrom mais saturado
+    #C0907E marrom menos saturado
+
+    rgba(97, 191, 183, 0.75)
+    rgba(183, 214, 218, 0.75)
+    rgba(114, 73, 59, 0.75)
+    rgba(192, 144, 126, 0.75)
+
+    .armadilha {
+    background-image: linear-gradient(rgba(97, 191, 183, 0.75),rgba(97, 191, 183, 0.75)), url(/images/money.jpg);
+}
+
+.planejamento {
+    background-image: linear-gradient(rgba(183, 214, 218, 0.75),rgba(183, 214, 218, 0.75)), url(/images/planejamento-sucessorio.jpg);
+}
+
+.gerenciamento {
+    background-image: linear-gradient(rgba(114, 73, 59, 0.75),rgba(114, 73, 59, 0.75)), url(/images/gastos.jpg);
+}
+
+.tecnologia {
+    background-image: linear-gradient(rgba(192, 144, 126, 0.75),rgba(192, 144, 126, 0.75)), url(/images/tecnologia-financas.jpg);
+}
+*/
