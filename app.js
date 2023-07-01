@@ -14,20 +14,28 @@ app.get("/", function(req, res) {
     res.render("home", {});
 });
 
-app.get("/professor", function(req, res) {
-    res.render("professor", {});
+app.get("/revista", function(req, res) {
+    res.render("revista", {});
 });
 
-app.get("/videomaterial", function(req, res) {
-    res.render("videomaterial", {});
+app.get("/video", function(req, res) {
+    res.render("video", {});
+});
+
+app.get("/professor", function(req, res) {
+    res.render("professor", {});
 });
 
 app.get("/informacoes", function(req, res) {
     res.render("informacoes", {});
 });
 
+app.get("/futuro", function(req, res) {
+    res.render("futuro", {});
+});
+
 app.get("/contato", function(req, res) {
-    res.render("faleconosco", {});
+    res.render("contato", {});
 });
 
 app.listen(3000, function() {
