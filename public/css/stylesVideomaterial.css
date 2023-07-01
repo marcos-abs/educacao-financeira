@@ -1,0 +1,30 @@
+.corpo-videos {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.item {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.corpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10em;
+}
+
+.titulo {
+    text-align: center;
+    margin: 50px auto;
+}
